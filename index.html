@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WE Park Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body onload="updateProjectInfo()">
+    <header>
+        <h1>We Park Dashboard</h1>
+    </header>
+    <div class="flex-container">
+        <section id="project-info">
+            <h2>Project Information</h2>
+            <ul>
+                <li><i class="fas fa-clipboard-list"></i> <strong>Project Name:</strong> <span id="project-name"></span></li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> <span id="location"></span></li>
+                <li><i class="fas fa-ruler"></i> <strong>Size:</strong> <span id="size"></span></li>
+                <li><i class="fas fa-money-bill-wave"></i> <strong>Budget:</strong> <span id="budget"></span></li>
+            </ul>
+        </section>
+        <section id="map-container">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1Hl150OOBlVexMPnVhw14wH2FRLYyEyw&ehbc=2E312F" width="640" height="480"></iframe>
+        </section>
+    </div>
+</body>
+</html>
